@@ -5,15 +5,30 @@ function Titulo(props) {
 
     return (
         <View style={[styles.Container]}>
-            <Text>{props.principal}</Text>
-            <Text>{props.secundario}</Text>
+            <Text style={styles.Principal}>{props.principal}</Text>
+            <Text style={styles.Secundario}>
+                {props.secundario ? props.secundario: ''}
+            </Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     Container: {
-        backgroundColor: '#fff'
+        backgroundColor: '#fff',
+        paddingBottom: 5,
+        paddingTop: 10
+    },
+    Principal: {
+        color: '#000',
+        fontWeight: 'bold',
+        fontSize: 22,
+        textAlign: 'center'
+    },
+    Secundario: {
+        color: '#535251',
+        fontSize: 16,
+        textAlign: 'center'
     }
 })
 
