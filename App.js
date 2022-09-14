@@ -8,14 +8,14 @@ import {
   Estilos, MinMax, Titulo,
   Botao, Contador 
 } from './src/components'
+import Calculadora from './src/Screens/Calculadora';
 
 const App = () => { 
 
-  console.warn('Aviso')
-
   return (
     <SafeAreaView>
-      <Titulo principal="Contador"/>
+      <Calculadora/>
+      {/* <Titulo principal="Contador"/>
       <Contador inicial={20} intervalo={10}/>
       <Contador inicial={0} intervalo={2}/>
       <Titulo principal="Botão, TouchableOpacity e TouchableWithoutFeedback"/>
@@ -31,7 +31,7 @@ const App = () => {
       <Component1 />
       <Component2 />
       <Titulo principal="Primeiro componente"/>
-      <Primeiro />
+      <Primeiro /> */}
       
     </SafeAreaView>
   );
