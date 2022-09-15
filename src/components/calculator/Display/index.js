@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 
 function Display(props) {
@@ -12,13 +12,13 @@ function Display(props) {
 
 const styles = StyleSheet.create({
     Container: {
+        display: 'flex',
         backgroundColor: '#ccc',
         height: 100,
-        alignItems: 'flex-end',
         justifyContent: 'flex-end',
-        
+        alignItems: 'flex-end'
     },
-    Text : {
+    Text: {
         color: '#000',
         fontSize: 40,
         fontWeight: 'bold',

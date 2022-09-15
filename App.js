@@ -8,13 +8,13 @@ import {
   Estilos, MinMax, Titulo,
   Botao, Contador 
 } from './src/components'
-import Calculadora from './src/Screens/Calculadora';
+import Calculator from './src/screens/Calculator'
 
 const App = () => { 
 
   return (
     <SafeAreaView>
-      <Calculadora/>
+      <Calculator />
       {/* <Titulo principal="Contador"/>
       <Contador inicial={20} intervalo={10}/>
       <Contador inicial={0} intervalo={2}/>
@@ -32,7 +32,6 @@ const App = () => {
       <Component2 />
       <Titulo principal="Primeiro componente"/>
       <Primeiro /> */}
-      
     </SafeAreaView>
   );
 };
