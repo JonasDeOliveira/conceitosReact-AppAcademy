@@ -30,8 +30,17 @@ function Calculator(props) {
         setDisplay(operationParam);
     }
 
-    const handleSetResult = (result) => {
-        console.warn(result)
+    const handleSetResult = () => {
+        let result = 0;
+        if (operation == "+") result = numbers[0] + numbers[1];
+        if (operation == "-") result = numbers[0] - numbers[1];
+        if (operation == "*") result = numbers[0] * numbers[1];
+        if (operation == "/") result = numbers[0] / numbers[1];
+
+        let num = numbers;
+        num[0] = result;
+        setNumbers(num);
+        setDisplay(result);
     }
 
     return (
@@ -40,9 +49,19 @@ function Calculator(props) {
             <Display value={display}/>
             <View style={[styles.Buttons]}>
                 <Button label="AC" onPress={clear}/>
-                <Button label={5} onPress={addDigit}/>
+                <Button label={9} onPress={addDigit}/>
+                <Button label={8} onPress={addDigit}/>
                 <Button label={7} onPress={addDigit}/>
+                <Button label={6} onPress={addDigit}/>
+                <Button label={5} onPress={addDigit}/>
+                <Button label={4} onPress={addDigit}/>
+                <Button label={3} onPress={addDigit}/>
+                <Button label={2} onPress={addDigit}/>
+                <Button label={1} onPress={addDigit}/>
                 <Button label="+" onPress={handleSetOperation}/>
+                <Button label="-" onPress={handleSetOperation}/>
+                <Button label="*" onPress={handleSetOperation}/>
+                <Button label="/" onPress={handleSetOperation}/>
                 <Button label="=" onPress={handleSetResult}/>
             </View>
         </View>
