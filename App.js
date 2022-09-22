@@ -1,20 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
-  SafeAreaView
+  SafeAreaView, Text, Button
 } from 'react-native';
 import { 
   Primeiro, Padrao, 
   Component1, Component2,
   Estilos, MinMax, Titulo,
-  Botao, Contador 
+  Botao, Contador, PaiDireto,
+  PaiIndireto, Diferenciar,
+  Familia, Membro, ParImpar,
+  If, UsuarioLogado, ListaProdutos
 } from './src/components'
 import Calculator from './src/screens/Calculator'
 
 const App = () => { 
 
+  const [usuario, setUsuario] = useState({})
+  
+
+  const handleLogin = () => {
+    setUsuario({nome:"jonas", email:"jonas@rd.com"})
+  }
+
   return (
     <SafeAreaView>
-      <Calculator />
+      <ListaProdutos/>
+      {/* <UsuarioLogado usuario={usuario} />
+
+      <Button title="Fazer Login" onPress={handleLogin}/>
+      <Button title="sair" onPress={() => setUsuario({})}/> */}
+      {/* <ParImpar num={3}/>
+      <ParImpar num={10}/> */}
+      {/* <Familia>
+        <Membro nome="Bia" sobrenome="Arruda"/>
+        <Membro nome="Carlos" sobrenome="Arruda"/>
+        <Membro nome="Roberto" sobrenome="Arruda"/>
+        <Membro nome="Roberta" sobrenome="Arruda"/>
+      </Familia>
+      <Familia>
+        <Text>Qualuer coisa</Text>
+        <Membro nome="Bia" sobrenome="Silva"/>
+        <Membro nome="Carlos" sobrenome="Silva"/>
+        <Membro nome="Roberto" sobrenome="Silva"/>
+        <Membro nome="Roberta" sobrenome="Silva"/>
+      </Familia> */}
+      {/* <Diferenciar/> */}
+      {/* <PaiIndireto />
+      <PaiIndireto /> */}
+      {/* <PaiDireto/> */}
+      {/* <Calculator /> */}
       {/* <Titulo principal="Contador"/>
       <Contador inicial={20} intervalo={10}/>
       <Contador inicial={0} intervalo={2}/>
