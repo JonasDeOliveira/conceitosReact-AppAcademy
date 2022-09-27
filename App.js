@@ -9,7 +9,8 @@ import {
   Botao, Contador, PaiDireto,
   PaiIndireto, Diferenciar,
   Familia, Membro, ParImpar,
-  If, UsuarioLogado, ListaProdutos
+  If, UsuarioLogado, ListaProdutos,
+  ListaComFlatList, Forms
 } from './src/components'
 import Calculator from './src/screens/Calculator'
 
@@ -24,7 +25,9 @@ const App = () => {
 
   return (
     <SafeAreaView>
-      <ListaProdutos/>
+      <Forms/>
+      {/* <ListaComFlatList/>
+      <ListaProdutos/> */}
       {/* <UsuarioLogado usuario={usuario} />
 
       <Button title="Fazer Login" onPress={handleLogin}/>

@@ -2,12 +2,13 @@ import React from 'react';
 import { Text, View, StyleSheet } from 'react-native'
 import ItemProduto from './ItemProduto'
 import Produtos from '../mock/produtos'
+import { Titulo } from './index'
 
 function ListaProdutos(props) {
 
     return (
         <View style={[styles.Container]}>
-            <Text>Lista Produtos</Text>
+           <Titulo principal="Lista com map()"/>
             {
             Produtos.map((item) => {
                 return (
