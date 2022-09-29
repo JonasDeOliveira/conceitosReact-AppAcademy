@@ -10,7 +10,7 @@ import {
   PaiIndireto, Diferenciar,
   Familia, Membro, ParImpar,
   If, UsuarioLogado, ListaProdutos,
-  ListaComFlatList, Forms
+  ListaComFlatList, Forms, ClassComponent
 } from './src/components'
 import Calculator from './src/screens/Calculator'
 
@@ -25,7 +25,8 @@ const App = () => {
 
   return (
     <SafeAreaView>
-      <Forms/>
+      <ClassComponent/>
+      {/* <Forms/> */}
       {/* <ListaComFlatList/>
       <ListaProdutos/> */}
       {/* <UsuarioLogado usuario={usuario} />

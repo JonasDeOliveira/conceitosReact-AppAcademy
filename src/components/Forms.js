@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, View, StyleSheet, TextInput, Button, ScrollView } from 'react-native'
 import { MaskedTextInput } from "react-native-mask-text";
 import { Titulo } from './index'
@@ -12,6 +12,19 @@ function Forms(props) {
         telefone: '',
         data_nascimento: ''
     })
+    const [cont, setCont] = useState(0);
+
+    //componentDidMount
+    // useEffect(() => {
+    //     console.log(cont)
+    //     setCont(cont + 1)
+    // }, [])
+
+    //componentDidUpdate
+    useEffect(() => {
+        console.log(cont)
+        setCont(cont + 1)
+    }, [usuario])
 
     const cadastrar = () => {
         console.log(usuario);

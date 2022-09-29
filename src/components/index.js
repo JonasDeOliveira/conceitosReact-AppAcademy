@@ -16,6 +16,7 @@ import UsuarioLogado from './UsuarioLogado'
 import ListaProdutos from './ListaProdutos'
 import ListaComFlatList from './ListaComFlatList'
 import Forms from './Forms'
+import ClassComponent from './ClassComponent'
 
 export { Primeiro, Padrao, Component1, 
         Component2, Estilos, MinMax,
@@ -23,4 +24,4 @@ export { Primeiro, Padrao, Component1,
         PaiDireto, PaiIndireto, Diferenciar,
         Membro, Familia, ParImpar, If,
         UsuarioLogado, ListaProdutos,
-        ListaComFlatList, Forms }
+        ListaComFlatList, Forms, ClassComponent }
