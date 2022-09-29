@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  SafeAreaView, Text, Button
+  SafeAreaView, Text, Button, StyleSheet
 } from 'react-native';
 import { 
   Primeiro, Padrao, 
@@ -72,5 +72,6 @@ const App = () => {
     </SafeAreaView>
   );
 };
+
 
 export default App;
