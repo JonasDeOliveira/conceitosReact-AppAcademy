@@ -9,6 +9,14 @@ class ClassComponent extends Component {
             nome: "Jonas"
         }
     }
+
+    componentDidMount() {
+        console.warn('inciou')
+    }
+
+    componentDidUpdate() {
+        console.warn('atualizado')
+    }
     
     //escopo do this com arrow functions é a classe
     alterarNome = () => {
